@@ -88,10 +88,11 @@ export class ExternalModuleMapPlugin extends ConverterComponent {
 
     */
     if (null != match) {
-      console.log(' Mapping ', fileName, ' ==> ', match[1]);
-      this.modules.add(match[1]);
+      const moduleName = match[match.length - 1]
+      console.log(' Mapping ', fileName, ' ==> ', moduleName);
+      this.modules.add(moduleName);
       this.moduleRenames.push({
-        renameTo: match[1],
+        renameTo: moduleName,
         reflection: <ContainerReflection>reflection
       });
     }
