@@ -1,5 +1,5 @@
 {
-  "name": "@strictsoftware/typedoc-plugin-monorepo",
+  "name": "@smburrows/typedoc-plugin-monorepo",
   "version": "0.2.1",
   "description": "Optimize Typedoc documentation output for libraries that are organized in a monorepo.",
   "keywords": [
